@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 408343f175b22af4499811678add149f
+guid: c46728df213de13409227372b1198e45
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 9100000
@@ -11,5 +11,5 @@ AssetOrigin:
   productId: 178235
   packageName: Free Animals - Quirky Series
   packageVersion: 1.4
-  assetPath: Assets/_Game/Levels/10 Performance Testing/Animations/AC_Sparrow.controller
+  assetPath: Assets/_Game/Levels/10 Performance Testing/Animations/AC_Gecko.controller
   uploadId: 580081

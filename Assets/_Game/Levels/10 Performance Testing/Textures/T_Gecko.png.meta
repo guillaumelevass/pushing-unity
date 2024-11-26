@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 446f99d27897d674fae36a9422fe157a
+guid: 1df821863b14cec4ea5de78cb3d68fbe
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -111,5 +111,5 @@ AssetOrigin:
   productId: 178235
   packageName: Free Animals - Quirky Series
   packageVersion: 1.4
-  assetPath: Assets/_Game/Levels/10 Performance Testing/Textures/T_Sparrow.png
+  assetPath: Assets/_Game/Levels/10 Performance Testing/Textures/T_Gecko.png
   uploadId: 580081
