@@ -11,7 +11,7 @@ using Unity.Profiling;
 
 public class PerformanceTests
 {
-    private FlickerManager flickerManager;
+    private FlickyManager flickyManager;
 
     [SetUp]
     public void SetUp()
@@ -22,8 +22,8 @@ public class PerformanceTests
         GameObject instance = GameObject.Instantiate(prefab);
         string piopioPrefabPath = "Assets/_Game/Levels/10 Performance Testing/Prefabs/PioPio.prefab";
         GameObject ringPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(piopioPrefabPath);
-        flickerManager = instance.AddComponent<FlickerManager>();
-        flickerManager.ringPrefab = ringPrefab;
+        flickyManager = instance.AddComponent<FlickyManager>();
+        flickyManager.babyPrefab = ringPrefab;
         // var gameObject = GameObject.Find("Sparrow_LOD0");
     } 
     
@@ -31,7 +31,7 @@ public class PerformanceTests
     [Test, Performance]
     public void PerformanceTestsSimplePasses()
     {
-        Measure.Method(() =>  flickerManager.LoseChirpies(1000)).WarmupCount(10)
+        Measure.Method(() =>  flickyManager.LoseChirpies(1000)).WarmupCount(10)
             .MeasurementCount(40)
             .IterationsPerMeasurement(5)
             .GC()
@@ -50,7 +50,7 @@ public class PerformanceTests
         {
             for (int i = 0; i < 300; i++)
             {
-                flickerManager.LoseChirpies(5000);
+                flickyManager.LoseChirpies(5000);
                 yield return null;
             }
             
