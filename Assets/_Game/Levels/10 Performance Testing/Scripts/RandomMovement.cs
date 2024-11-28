@@ -43,7 +43,6 @@ public class RandomMovementXZ : MonoBehaviour
         // Check if the character is stuck (position hasn't changed significantly since the last update)
         if (Vector3.Distance(transform.position, previousPosition) < stuckThreshold)
         {
-            Debug.Log("Character is stuck, setting new target position.");
             SetNewTargetPosition();
         }
 
